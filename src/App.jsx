@@ -9,9 +9,11 @@ import Like from "./components/Like";
 import Signup from "./components/Signup";
 import Footer from "./components/Footer";
 
+import "./styles/index.scss";
+
 function App() {
     return (
-        <div className="App-Container">
+        <div className="App-container">
             <ScrollToTop />
             <Navbar />
             <Home />
