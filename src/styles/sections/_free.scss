@@ -1,0 +1,53 @@
+.free {
+    position: relative;
+    margin: 5rem 0;
+
+    .free-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 25rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        z-index: 1;
+        background-color: var(--orange);
+
+        .background {
+            z-index: -1;
+
+            .ellipse {
+                position: absolute;
+                width: 28rem;
+                height: 100%;
+                border-radius: 100%;
+                filter: blur(100px);
+            }
+
+            .pink {
+                background-color: var(--pink);
+                top: -10%;
+                left: -15%;
+            }
+
+            .green {
+                background-color: var(--green);
+                top: -10%;
+                right: -15%;
+            }
+        }
+
+        .content {
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding-top: 3rem;
+            padding-left: 5rem;
+            font-size: 1.3rem;
+
+            .title {
+                font-size: 2rem;
+            }
+        }
+    }
+}
