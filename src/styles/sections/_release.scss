@@ -41,6 +41,57 @@
                 }
             }
         }
+
+        .image {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            img {
+                height: 24rem;
+            }
+
+            .ellipse {
+                z-index: -1;
+                position: absolute;
+                width: 20rem;
+                height: 20rem;
+                filter: blur(100px);
+                bottom: -40%;
+                right: 0;
+            }
+
+            .pink {
+                background-color: var(--pink);
+            }
+        }
+
+        .card-container {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .ellipse {
+                z-index: -1;
+                position: absolute;
+                width: 20rem;
+                height: 20rem;
+                filter: blur(100px);
+                bottom: -45%;
+                left: 0;
+            }
+
+            .orange {
+                background-color: var(--orange);
+            }
+        }
     }
 
     .orange {
