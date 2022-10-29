@@ -26,7 +26,7 @@ const Footer = () => {
     const socialLink = [
         <BsFacebook />,
         <BsTwitter />,
-        <BsIntagram />,
+        <BsInstagram />,
         <FaTiktok />,
     ];
 
@@ -37,9 +37,32 @@ const Footer = () => {
                     <div className="brand">
                         <img src={logo} alt="logo" />
                     </div>
+                    <p>Coleção Exclusiva!</p>
+                    <ul>
+                        {socialLink.map((link, index) => (
+                            <li key={index}>{link}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="links">
+                    {links.map(({ title, data }, index) => {
+                        return (
+                            <div className="link" key={index}>
+                                <h4>{title}</h4>
+                                <ul>
+                                    {data.map((link, index2) => (
+                                        <li key={index2}>{link}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
-            <div className="lower"></div>
+            <div className="lower">
+                <span>&copy; Copyright 2022</span>
+                <span>Lançamento em Julho 2077</span>
+            </div>
         </footer>
     );
 };
