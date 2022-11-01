@@ -47,22 +47,22 @@ function App() {
         const home = document.getElementsByClassName("home");
         home[0].style.transform = "none";
 
-        const nav = document.getElementsByName("nav");
+        const nav = document.getElementsByTagName("nav");
         nav[0].style.transform = "none";
     }, 1500);
 
     return (
         <div className="App-container" data-theme={theme}>
-            <ScrollToTop />
+            {/* <ScrollToTop /> */}
             <Navbar changeTheme={changeTheme} currentTheme={theme} />
             <Home />
-            <Free />
-            <Clients />
+            {/* <Free /> */}
+            {/* <Clients />
             <SuperRare />
             <Release />
             <Like />
             <Signup />
-            <Footer />
+            <Footer /> */}
         </div>
     );
 }

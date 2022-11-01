@@ -80,4 +80,15 @@
             }
         }
     }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        padding: 1rem;
+        position: relative;
+        overflow-x: hidden;
+        margin-top: 1rem;
+
+        .home-container {
+            font-size: 16px;
+            grid-template-columns: 0.7fr;
+        }
+    }
 }
