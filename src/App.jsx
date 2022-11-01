@@ -56,13 +56,13 @@ function App() {
             {/* <ScrollToTop /> */}
             <Navbar changeTheme={changeTheme} currentTheme={theme} />
             <Home />
-            {/* <Free /> */}
-            {/* <Clients />
-            <SuperRare />
-            <Release />
-            <Like />
-            <Signup />
-            <Footer /> */}
+            <Free />
+            <Clients />
+            {/* <SuperRare /> */}
+            {/* <Release /> */}
+            {/* <Like /> */}
+            {/* <Signup /> */}
+            {/* <Footer /> */}
         </div>
     );
 }
