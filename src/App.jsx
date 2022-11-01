@@ -16,9 +16,16 @@ import Footer from "./components/Footer";
 import "./styles/index.scss";
 
 function App() {
+    const [theme, setTheme] = useState("dark");
+
     useEffect(() => {
         registerAnimations();
     }, []);
+
+    //mudar ícone e tema (classe) da página (dark, light)
+    const changeTheme = () => {
+        theme === "dark" ? setTheme("light") : setTheme("dark");
+    };
 
     //animacoes na pagina
     const registerAnimations = () => {
@@ -45,9 +52,9 @@ function App() {
     }, 1500);
 
     return (
-        <div className="App-container">
+        <div className="App-container" data-theme={theme}>
             <ScrollToTop />
-            <Navbar />
+            <Navbar changeTheme={changeTheme} currentTheme={theme} />
             <Home />
             <Free />
             <Clients />
