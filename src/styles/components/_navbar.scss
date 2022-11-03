@@ -97,6 +97,7 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 60vw;
             height: 100vh;
             transition: 0.5s ease-in-out;
             background-image: linear-gradient(
@@ -111,7 +112,7 @@ nav {
 
                 li {
                     #warning {
-                        color: black;
+                        color: purple;
                     }
                     a {
                         color: var(--background);

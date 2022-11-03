@@ -53,16 +53,16 @@ function App() {
 
     return (
         <div className="App-container" data-theme={theme}>
-            {/* <ScrollToTop /> */}
+            <ScrollToTop />
             <Navbar changeTheme={changeTheme} currentTheme={theme} />
             <Home />
             <Free />
             <Clients />
-            {/* <SuperRare /> */}
-            {/* <Release /> */}
-            {/* <Like /> */}
-            {/* <Signup /> */}
-            {/* <Footer /> */}
+            <SuperRare />
+            <Release />
+            <Like />
+            <Signup />
+            <Footer />
         </div>
     );
 }

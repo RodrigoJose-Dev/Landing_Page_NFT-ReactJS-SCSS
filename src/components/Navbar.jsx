@@ -26,7 +26,7 @@ const Navbar = ({ changeTheme, currentTheme }) => {
                             />
                         )}
                     </div>
-                    <div className="mode">
+                    <div className="mode" onClick={changeTheme}>
                         {currentTheme === "dark" ? (
                             <ImSun className="light" />
                         ) : (
